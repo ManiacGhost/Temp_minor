@@ -11,6 +11,7 @@
 	<script src="duplicate.js"></script>
 </head>
 <body>
+	<div id="pdfinvoice">
 	<div id="header">
 		<header>
 			<h1>Basic Details Of the Faculty</h1>
@@ -654,7 +655,37 @@
                            
                            </div>	
 						   <button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>		
+						   </div>
+						   <a  href="javascript:void(0)" class=" button	float-center mt-6 btn-download">Download PDF  </a>
+	<script src="addmore.js"></script>
+	<script src="js/jspdf.debug.js"></script>
+	<script src="js/html2canvas.min.js"></script>
+	<script src="js/html2pdf.min.js"></script>		
+	<script>
+		const options = {
+		  margin: 0.5,
+		  filename: 'invoice.pdf',
+		  image: { 
+			type: 'jpeg', 
+			quality: 500
+		  },
+		  html2canvas: { 
+			scale: 1 
+		  },
+		  jsPDF: { 
+			unit: 'in', 
+			format: 'letter', 
+			orientation: 'portrait' 
+		  }
+		}
+		
+		$('.btn-download').click(function(e){
+		  e.preventDefault();
+		  const element = document.getElementById('pdfinvoice');
+		  html2pdf().from(element).set(options).save();
+		});
+	   
+		</script>									
 
-	<script src="addmore.js"></script>											
-	</body>
+</body>
 </html>
