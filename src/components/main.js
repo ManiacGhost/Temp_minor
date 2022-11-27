@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from "./form";
+import signform from './signform';
 
 class Main extends Component {
   render() {
@@ -14,7 +14,7 @@ class Main extends Component {
          <div className="gallery-item-one"></div>
          <div className="gallery-item-two"></div>
          <div className="gallery-item-three"></div>
-         <div className="gallery-item-four"></div>
+         <div className="gallery-item-four"></div>  
          <div className="gallery-item-five"></div>
          <div className="gallery-item-six"></div>
          
@@ -24,7 +24,7 @@ class Main extends Component {
 
         <section id="contact">
             
-            <Form />
+            <signform />
           
         </section>
 
