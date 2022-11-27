@@ -11,74 +11,9 @@
 	<script src="duplicate.js"></script>
 </head>
 <body>
-	<div id="pdfinvoice">
-	<div id="header">
-		<header>
-			<h1>Basic Details Of the Faculty</h1>
-		</header>
-		</div>
-		<div id="formSec1">
-			<form class="basicform">
-				<table class="basicform">
-					
-					<tr>
-					<td>
-						<label>Name :</label>	
-						<input type="text" name="name" placeholder="Your name here please"/>
-					</td>
-					<td>
-						<label>Email :</label>	
-						<input type="text" name="name" placeholder="Your email here please"/>
-					</td>
-					<td>
-						<label>Designation :</label>	
-						<input type="text" name="name" placeholder="Your designation please"/>
-					</td>
-					<td>
-						<label>Qualification :</label>	
-						<input type="text" name="name" placeholder="Your Qualification"/>
-					</td>
-					</tr>
-					<tr>
-						<td>
-							<label>Department :</label>	
-							<input type="text" name="name" placeholder="Your department"/>
-						</td>
-						<td>
-							<label>Date of Joining</label>	
-							<input type="date" name="name" placeholder="When did you join this Institution ?"/>
-						</td>
-						<td>
-							<label> Initial Designation :</label>	
-							<input type="text" name="name" placeholder="Initial Designation"/>
-						</td>
-						<td>
-							<label>Present Payscale :</label>	
-							<input type="text" name="name" placeholder="Your present payscale"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<label>Specialization :</label>	
-							<input type="text" name="name" placeholder="Your Specialization here please"/>
-						</td>
-						<td>
-							<label>Additional Qualification :</label>	
-							<input type="text" name="name" placeholder="Your Additional Qualification here please"/>
-						</td>
-						<td>
-							<label>Pursuing higher studies :</label>	
-							<input type="text" name="name" placeholder=""/>
-						</td>
-						</tr>
-					
-				</table>
-			
-				</div>
-
 	<div id="header">
 	<header>
-		<h1>Orientation/Refresher Courses, Summer/Winter Schools, Faculty Development Programmes, Seminars/Conferences/Workshops Attended/ Organized: </h1>
+		<h1><u>Orientation/Refresher Courses, Summer/Winter Schools, Faculty Development Programmes, Seminars/Conferences/Workshops Attended/ Organized: </u></h1>
 	</header>
 	</div>
 	<div id="formSec1">
@@ -93,8 +28,7 @@
 					<th>Title</th>
 					<th>Weeks</th>
 					<th>Duration</th>
-					<th>Sponsoring agency and 
-						<br/>organization and place held</th>
+					<th>Sponsoring agency and organization and place held</th>
 					<th>API score</th>
 					<th>HOD remarks</th>
 				 </tr>
@@ -117,8 +51,7 @@
 						<input type="date" name="d2" class="form-control" value="date2" placeholder=""/>
  					</td>
 					<td>
-						<input type="checkbox" name="c1" value ="" placeholder="">&nbsp&nbsp&nbspAttended</input><br/>
-						<input type="checkbox" name="c2" value ="" placeholder=""> Organized</input><br/>
+						<input type="text" name="t3" class="form-control" value="" size="40"/>
 					</td>
 					<td>
 						<input type="text" name="t4" class="form-control" value=""/>
@@ -142,9 +75,9 @@
 	<div id="formsec2">
 	<div id="header">
 		<header>
-			<h1>Teaching, Learning and Evaluation activities :</h1>
+			<h1><u>Teaching, Learning and Evaluation activities :</u></h1>
 			<h2>&nbsp Lectures/Tutorials/Practical's/Projects/Seminars Conducted:</h2	>
-		</header>	
+		</header>
 		</div>
 		<h1><span>ODD SEMESTER</h1>
 		<div id="formSec1">
@@ -372,27 +305,7 @@
 													<td>
 														<input type="text" value=""/>
 													</td>
-														<td>
-															<input type="text" value="" style="width: 20px;"/>
-														</td>
-														<td>
-															<input type="text" value="" style="width: 20px;"/>
-														</td>
-														<td>
-															<input type="text" value="" style="width: 20px;"/>
-														</td>
-														<td>
-															<input type="text" value="" style="width: 20px;"/>
-														</td>
-														<td>
-															<input type="text" value="" style="width: 20px;"/>
-														</td>
-														<td>
-															<input type="text" value="" style="width: 20px;"/>
-														</td>
-														<td>
-															<input type="text" value=""/>
-														</td>
+														
 													</tr>
 
 				
@@ -453,7 +366,7 @@
 															<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
 															<div id="header">
 																<header>
-																	<h1>Research Papers Published/ Presented:</h1>
+																	<h1><u>Research Papers Published/ Presented:</u></h1>
 																</header>
 																</div>
 																<div id="formSec1">
@@ -500,7 +413,7 @@
 																		<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
 																		<div id="header">
 																			<header>
-																				<h1>Books, Chapters in Books Written:</h1>
+																				<h1><u>Books, Chapters in Books Written:</u></h1>
 																			</header>
 																			</div>
 																			<div id="formSec1">
@@ -547,7 +460,7 @@
 																					<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
                      <div id="header">
                       <header>
-                       <h1>Research Projects and Consultancy Works:</h1>
+                       <h1><u>Research Projects and Consultancy Works:</u></h1>
                       </header>
                       </div>
                       <div id="formSec1">
@@ -602,7 +515,7 @@
 						<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
                         <div id="header">
                          <header>
-                          <h1>Research Guidance: </h1>
+                          <h1><u>Research Guidance: </u></h1>
                          </header>
                          </div>
                          <div id="formSec1">
@@ -655,37 +568,7 @@
                            
                            </div>	
 						   <button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>		
-						   </div>
-						   <a  href="javascript:void(0)" class=" button	float-center mt-6 btn-download">Download PDF  </a>
-	<script src="addmore.js"></script>
-	<script src="js/jspdf.debug.js"></script>
-	<script src="js/html2canvas.min.js"></script>
-	<script src="js/html2pdf.min.js"></script>		
-	<script>
-		const options = {
-		  margin: 0.5,
-		  filename: 'invoice.pdf',
-		  image: { 
-			type: 'jpeg', 
-			quality: 500
-		  },
-		  html2canvas: { 
-			scale: 1 
-		  },
-		  jsPDF: { 
-			unit: 'in', 
-			format: 'letter', 
-			orientation: 'portrait' 
-		  }
-		}
-		
-		$('.btn-download').click(function(e){
-		  e.preventDefault();
-		  const element = document.getElementById('pdfinvoice');
-		  html2pdf().from(element).set(options).save();
-		});
-	   
-		</script>									
 
-</body>
+	<script src="addmore.js"></script>											
+	</body>
 </html>
