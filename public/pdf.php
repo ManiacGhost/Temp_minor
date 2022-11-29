@@ -1,16 +1,16 @@
 <?php
 if(!empty($_POST['submit'])){
-    $roll = $_POST['name'];
-    $roll = $_POST['email'];
-    $roll = $_POST['desig'];
-    $roll = $_POST['qual'];
-    $roll = $_POST['dep'];
-    $roll = $_POST['doj'];
-    $roll = $_POST['initdesig'];
-    $roll = $_POST['pay'];
-    $roll = $_POST['spc'];
-    $roll = $_POST['addqual'];
-    $roll = $_POST['higher'];
+    $Roll = $_POST['name'];
+    $Email = $_POST['email'];
+    $Desig = $_POST['desig'];
+    $Qual = $_POST['qual'];
+    $Dep = $_POST['dep'];
+    $Doj = $_POST['doj'];
+    $Init = $_POST['initdesig'];
+    $Pay = $_POST['pay'];
+    $Spc = $_POST['spc'];
+    $Addqual = $_POST['addqual'];
+    $High = $_POST['higher'];
 
     require("fpdf.php");
 
