@@ -11,7 +11,7 @@ if(!empty($_POST['submit'])){
     $Spc = $_POST['spc'];
     $Addqual = $_POST['addqual'];
     $High = $_POST['higher'];
-
+    
     require("fpdf.php");
 
     $pdf = new FPDF();
