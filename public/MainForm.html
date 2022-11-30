@@ -27,54 +27,55 @@
 			<tr>
 				<td>
 					<label>Name :</label>
-					<input type="text" placeholder="" name="name"/>
+					<input type="text" placeholder="" name="name" id="inpname"/>
 				</td>
 				<td>
 					<label>Email :</label>
-					<input type="text" placeholder="" name="email"/>
+					<input type="text" placeholder="" name="email" id="inpemail"/>
 				</td>
 				<td>
 					<label>Designation :</label>
-					<input type="text" placeholder="" name="desig"/>
+					<input type="text" placeholder="" name="desig" id="inpdesig"/>
 				</td>
 				<td>
 					<label>Qualification :</label>
-					<input type="text" placeholder="" name="qual"/>
+					<input type="text" placeholder="" name="qual" id="inpqual"/>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<label>Department :</label>
-					<input type="text" placeholder="" name="dep"/>
+					<input type="text" placeholder="" name="dep" id="inpdep"/>
 				</td>
 				<td>
 					<label>Date of joining :</label>
-					<input type="date" placeholder="" name="doj"/>
+					<input type="date" placeholder="" name="doj" id="inpdoj"/>
 				</td>
 				<td>
 					<label>Initial Designation :</label>
-					<input type="text" placeholder="" name="initdesig"/>
+					<input type="text" placeholder="" name="initdesig" id="inpinitdesig"/>
 				</td>
 				<td>
 					<label>Present Payscale :</label>
-					<input type="text" placeholder="" name="pay"/>
+					<input type="text" placeholder="" name="pay" id="inppay"/>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<label>Specialization :</label>
-					<input type="text" placeholder="" name="spc"/>
+					<input type="text" placeholder="" name="spc" id="inpspc"/>
 				</td>
 				<td>
 					<label>Additional Qualification :</label>
-					<input type="text" placeholder="" name="addqual"/>
+					<input type="text" placeholder="" name="addqual" id="inpaddqual"/>
 				</td>
 				<td>
 					<label>Pursuing higher studies :</label>
-					<input type="text" placeholder="" name="higher"/>
+					<input type="text" placeholder="" name="higher" id="inphigh"/>
 				</td>
 			</tr>
 		</table>
+		
 		</form>
 
 
@@ -661,7 +662,10 @@
                            </div>	
 						   <button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>		
 						</div>
-						<button class="btn btn-primary" id="download">Download</button>
-	<script src="addmore.js"></script>											
+						<button type="submit" class=" button btn btn-primary" id="submitt" style="width: 10%;">Submit</button>
+						<button class=" button btn btn-primary" id="download" style="width: 10%;">Download</button>
+						
+	<script src="addmore.js"></script>
+	<script src = "submit_button.js"></script>											
 	</body>
 </html>
