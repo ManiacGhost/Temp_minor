@@ -35,7 +35,8 @@ function fun1(){
     console.log(consout_pay);
     console.log(consout_spc);
     console.log(consout_addqual);
-    console.log(consout_high);
+    console.log(consout_high)
+    alert("YOUR VALUES HAVE BEEN SUBMITTED");
 
 }
 

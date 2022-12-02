@@ -77,7 +77,7 @@
 		</table>
 		
 		</form>
-
+		<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 
 	</div>
 	<div id="header">
@@ -111,22 +111,22 @@
 						<input type="text" name="t2" class="form-control" value="" placeholder=""/>
 					</td>
 					<td>
-						<input type="checkbox" name="c1" value ="" placeholder="">Week < 1</input><br/>
-						<input type="checkbox" name="c2" value ="" placeholder="">Week < 2</input><br/> 	
-						<input type="checkbox" name="c3" value ="" placeholder="">Week > 2</input><br/>
+						<input type="checkbox" name="c1" value ="1" id="c1" placeholder="" onchange="apiscore()">Week < 1</input><br/>
+						<input type="checkbox" name="c2" value ="3" id="c2" placeholder="" onchange="apiscore()">Week < 2</input><br/> 	
+						<input type="checkbox" name="c3" value ="5" id="c3" placeholder="" onchange="apiscore()">Week > 2</input><br/>
 					</td>
 					<td>
 						<label>FROM</label>
 						<input type="date" name="d1" class="form-control" value="date1" placeholder =""/><br/>
 						<label>TO</label>
-						<input type="date" name="d2" class="form-control" value="date2" placeholder=""/>
+						<input type="date" name="d2" class="form-control" value="date2" placeholder=""	/>
  					</td>
 					<td>
-						<input type="checkbox" name="c4" value ="" placeholder="">&nbsp&nbsp&nbspAttended</input><br/> 	
-						<input type="checkbox" name="c5" value ="" placeholder="">&nbspOrganized</input><br/>
+						<input type="checkbox" name="c4"  id="c4" placeholder="" onclick="apiscore()">&nbsp&nbsp&nbspAttended</input><br/> 	
+						<input type="checkbox" name="c5"  id="c5" placeholder="" onclick="apiscore()">&nbspOrganized</input><br/>
 					</td>
 					<td>
-						<input type="text" name="t4" class="form-control" value=""/>
+						<input type="text" name="t4" id="apitf" class="form-control" value=""/>
 					</td>
 					<td>
 						<input type="text" name="t5" class="form-control" value="" size="40"/>
@@ -137,10 +137,10 @@
 				</form>
 			</table>
 			</form>
-		
+			
 			</div>
 			<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield1()"><span>Add More</span></button>	
-
+			<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 			
 		
 	</div>
@@ -182,13 +182,13 @@
 							<input type="text" name="a4" value="" class="form-control" placeholder=""/>
 						 </td>
 						<td>
-							<input type="text" name="a5" class="form-control" value=""/>
+							<input type="text" name="a5" class="form-control" id="tf_odd1" value=""/>
 						</td>
 						<td>
-							<input type="text" name="a6" class="form-control" value=""/>
+							<input type="text" name="a6" class="form-control" id="tf_odd2" value=""/>
 						</td>
 						<td>
-							<input type="text" name="a7" class="form-control" value=""/>
+							<input type="text" name="a7" class="form-control" id="tfapi1" value=""/>
 						</td>
 						<td>
 							<input type="text" name="a8" class="form-control" value=""/>	
@@ -201,7 +201,7 @@
 			</form>
 		</div>
 		<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield2()"><span>Add More</span></button>
-
+		<button class=" button float-right mt-2" style="vertical-align:middle" id="btncalc" onclick="apiscoretable_2()"><span>Calculate API SCORE</span></button>
 		<div id="formsec3">
 		<h1><span>EVEN SEMESTER</h1>
 			<div id="formSec1">
@@ -234,13 +234,13 @@
 								<input type="text" value="" placeholder=""/>
 							 </td>
 							<td>
-								<input type="text" value=""/>
+								<input type="text" value="" id="tf_even1"/>
 							</td>
 							<td>
-								<input type="text" value=""/>
+								<input type="text" value="" id="tf_even2"/>
 							</td>
 							<td>
-								<input type="text" value=""/>
+								<input type="text" value="" id="tfapi2"/>
 							</td>
 							<td>
 								<input type="text" value=""/>
@@ -251,7 +251,7 @@
 				</form>
 					</div>
 					<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield3()"><span>Add More</span></button>
-		
+					<button class=" button float-right mt-2" style="vertical-align:middle" id="btncalceven" onclick="apiscoretable_3()"><span>Calculate API SCORE</span></button>
 				
 				</form>
 			</div>
@@ -281,7 +281,7 @@
 									<input type="text" name="t1" value="1" placeholder=""/>
 								</td>
 								<td>
-									<input type="text" name="t2" value="" placeholder=""/>
+									<input type="text" name="t2" value="" placeholder="" id="cc"/>
 								</td>
 								<td>
 									<input type="text" name="c1" value ="" placeholder=""/>
@@ -294,7 +294,7 @@
 									<input type="text" name="t3" value=""/>
 								</td>
 								<td>
-									<input type="text" name="t4" value=""/>
+									<input type="text" name="t4" value="" id="apitf3"/>
 								</td>
 								<td>
 									<input type="text" name="t5" value=""/>
@@ -308,6 +308,7 @@
 						</div>
 					</div>
 						<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield4()"><span>Add More</span></button>
+						<button class=" button float-right mt-2" style="vertical-align:middle" id="btncalc2" onclick="apiscoretable4()"><span>Calculate API SCORE</span></button>
 					</div>
 						<div id="header">
 							<header>
@@ -342,6 +343,7 @@
 									</div>
 								</div>
 									<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield5()"><span>Add More</span></button>
+									<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 									<div id="header">
 										<header>
 											<h2>Examination and Evaluation Duties : </h2>
@@ -408,7 +410,7 @@
 												</div>
 											</div>
 												<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield6()"><span>Add More</span></button>
-
+												<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 												<div id="header">
 													<header>
 														<h1>Research Papers Published/ Presented:	</h1>
@@ -457,6 +459,7 @@
 															
 															</div>
 															<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
+															<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 															<div id="header">
 																<header>
 																	<h1>Research Papers Published/ Presented:</h1>
@@ -504,6 +507,7 @@
 																		
 																		</div>
 																		<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
+																		<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 																		<div id="header">
 																			<header>
 																				<h1>Books, Chapters in Books Written:</h1>
@@ -551,6 +555,7 @@
 																					
 																					</div>
 																					<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
+																					<button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
                      <div id="header">
                       <header>
                        <h1>Research Projects and Consultancy Works:</h1>
@@ -606,7 +611,8 @@
                         
                         </div>
 						<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>
-                        <div id="header">
+                        <button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
+						<div id="header">
                          <header>
                           <h1>Research Guidance: </h1>
                          </header>
@@ -629,7 +635,7 @@
                              </tr>
                              <tr>
                              <td>
-                              <input type="text" name="t1" value="1" placeholder=""/>
+                              <input type="text" name="t1" value="1"  placeholder=""/>
                              </td>
                              <td>
                               <input type="text" name="t2" value="" placeholder=""/>
@@ -661,11 +667,150 @@
                            
                            </div>	
 						   <button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield()"><span>Add More</span></button>		
+						   <button class=" button float-right mt-2" style="vertical-align:middle" id="smbbtn"><span>SUBMIT</span></button>
 						</div>
-						<button type="submit" class=" button btn btn-primary" id="submitt" style="width: 10%;">Submit</button>
+						
 						<button class=" button btn btn-primary" id="download" style="width: 10%;">Download</button>
 						
 	<script src="addmore.js"></script>
-	<script src = "submit_button.js"></script>											
+	<script src = "submit_button.js"></script>	
+	<script>
+		
+		function apiscore(){
+	var cbweek1 = document.getElementById("c1");
+	var cbweek2 = document.getElementById("c2");
+	var cbweek3 = document.getElementById("c3");
+	var cbweek4 = document.getElementById("c4");
+	var cbweek5 = document.getElementById("c5");
+	var apitext = document.getElementById("apitf");
+		var apisum = 0;
+		var sum1 = 0;
+		var sum2 = 0;
+		var sum3 = 0;
+		var sumf = 0;
+		var w1val = cbweek1.value;
+		var w2val = cbweek2.value;
+		var w3val = cbweek3.value;
+		
+		
+
+		if(cbweek1.checked==true){
+			console.log(w1val);
+			sum1 = parseInt(w1val);
+			sumf +=  sum1;
+			
+		}
+		else if(cbweek2.checked==true){
+			console.log(w2val);
+			sum2 = parseInt(w2val);
+			sumf += sum2;
+			
+		}
+		else if(cbweek3.checked==true){
+			console.log(w3val);
+			sum3 = parseInt(w3val);
+			sumf += sum3;
+			
+		}
+
+		if(cbweek5.checked==true){
+			cbweek1.value = 5+1;
+			cbweek2.value = 10+3;
+			cbweek3.value = 20+5;
+
+		}
+
+		console.log(sumf);
+		apisum = sumf;
+		apitext.value = apisum;	
+    }
+	function apiscoretable_2(){
+		var textf1 = document.getElementById("tf_odd1");
+		var textf2 = document.getElementById("tf_odd2");
+		var apitf = document.getElementById("tfapi1");
+		var btn = document.getElementById("btncalc");
+		
+		
+		var n1 = parseInt(textf1.value);
+		var n2 = parseInt(textf2.value);
+		var res = n2/n1*100;
+		console.log(n1);
+		console.log(n2);
+		var final = 0;
+		if(res>=95){
+			final = 25;
+			
+		}
+		else if(res>=80){
+			/*80->95 = 15 -> 25*/
+			if(res>90){
+				final = 25;
+			}
+			else if(res>85){
+				final = 20;
+			}
+			else if(res>80){
+				final = 15;
+			}
+		}
+		else if(res=80){
+			final = 15;
+		}
+		
+		apitf.value = final;
+		btn.addEventListener('click',apiscoretable_2);
+
+	}
+	function apiscoretable_3(){
+		var textf1 = document.getElementById("tf_even1");
+		var textf2 = document.getElementById("tf_even2");
+		var apitf = document.getElementById("tfapi2");
+		var btn = document.getElementById("btncalceven");
+		
+		
+		var n1 = parseInt(textf1.value);
+		var n2 = parseInt(textf2.value);
+		var res = n2/n1*100;
+		console.log(n1);
+		console.log(n2);
+		var final = 0;
+		if(res>=95){
+			final = 25;
+			
+		}
+		else if(res>=80){
+			/*80->95 = 15 -> 25*/
+			if(res>90){
+				final = 25;
+			}
+			else if(res>85){
+				final = 20;
+			}
+			else if(res>80){
+				final = 15;
+			}
+		}
+		else if(res=80){
+			final = 15;
+		}
+		
+		apitf.value = final;
+		btn.addEventListener('click',apiscoretable_3);
+
+	}
+	function apiscoretable4(){
+		var tf = document.getElementById("cc");
+		var apitf = document.getElementById("apitf3");
+		var btn = document.getElementById("btncalc2")
+		var res = tf.value;
+		if(res.length < 1){
+			apitf.value = 0;
+		}
+		else{
+			apitf.value = 10;
+		}
+		btn.addEventListener('click',apiscoretable4);
+	}
+	</script>										
 	</body>
 </html>
