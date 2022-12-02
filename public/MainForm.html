@@ -741,7 +741,7 @@
 			final = 25;
 			
 		}
-		else if(res>=80){
+		else if(res>80){
 			/*80->95 = 15 -> 25*/
 			if(res>90){
 				final = 25;
@@ -755,6 +755,9 @@
 		}
 		else if(res=80){
 			final = 15;
+		}
+		else{
+			final = 0;
 		}
 		
 		apitf.value = final;
@@ -778,7 +781,7 @@
 			final = 25;
 			
 		}
-		else if(res>=80){
+		else if(res>80){
 			/*80->95 = 15 -> 25*/
 			if(res>90){
 				final = 25;
