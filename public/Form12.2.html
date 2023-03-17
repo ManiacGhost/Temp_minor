@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>THE FINAL FORM</title>
+	<link rel="stylesheet" type="text/css" href="styles_creators.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width : 568px)">
+	<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="script.js"></script>
+
+	<script src="duplicate.js"></script>
+</head>
+<body>
+    <section id="navbar">
+		
+        <nav>
+            
+            <ul class="navitems" style="list-style-type: none">
+                <li><a href="MainForm2.html">Form-11</a></li>
+                <li><a href="Form12.1.html" >Form-12.1</a></li>
+                <li><a href="Form12.2.html">Form-12.2</a></li>
+                <li><a href="Form12.3.html">Form-12.3</a></li>
+                <li><a href="Form12.3.html">Form-12.3</a></li>
+                <li><a href="Form12.4.html">Form-12.4</a></li>
+                <li><a href="Form13.html">Form-13</a></li>
+                <li><a href="Form14.html">Form-14</a></li>
+                <li><a href="Form15.html">Form-15</a></li>
+                <li><a href="Form16.html">Form-16</a></li>
+                <li><a href="Form17.html">Form-17</a></li>
+                            
+                
+            </ul>
+        </nav> 
+        </div>
+
+</section>
+
+
+
+<section id = "form2">
+	<div id="formsec2">
+	<div id="header">
+		<header>
+			<h1>Teaching, Learning and Evaluation activities :</h1>
+			<h2>&nbsp Lectures/Tutorials/Practical's/Projects/Seminars Conducted:</h2	>
+		</header>
+		</div>
+		<h1><span>ODD SEMESTER</h1>
+		<div id="formSec1">
+				<div class = "form-block">
+				<form id="item12">
+				<table style="overflow-x: auto;">
+					
+					 <tr>
+						<th>S.no</th>
+						<th>Course Code</th>
+						<th>Couse Title</th>
+						<th>Contact Hours/week</th>
+						<th>Total no. of scheduled classes in semester</th>
+						<th>Total no. of engaged classes in semester</th>
+						<th>API score</th>
+						<th>HOD remarks</th>
+					 </tr>
+					 <tr>
+						<td>
+							<input type="text" name="a1" value="1" class="form-control" placeholder=""/>
+						</td>
+						<td>
+							<input type="text" name="a2" value="" class="form-control" placeholder=""/>
+						</td>
+						<td>
+							<input type="text" name="a3"value ="" class="form-control" placeholder=""/>
+							
+						</td>
+						<td>
+							<input type="text" name="a4" value="" class="form-control" placeholder=""/>
+						 </td>
+						<td>
+							<input type="text" name="a5" class="form-control" id="tf_odd1" value=""/>
+						</td>
+						<td>
+							<input type="text" name="a6" class="form-control" id="tf_odd2" value=""/>
+						</td>
+						<td>
+							<input type="text" name="a7" class="form-control" id="tfapi1" value=""/>
+						</td>
+						<td>
+							<input type="text" name="a8" class="form-control" value=""/>	
+						</td>
+						<br/>
+					 </tr>
+				</table>
+			    </form>
+				</div>
+			</form>
+		</div>
+	</section>
+		<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield2()"><span>Add More</span></button>
+		<button class=" button float-right mt-2" style="vertical-align:middle" id="btncalc" onclick="apiscoretable_2()"><span>Calculate API SCORE</span></button>
+		<section id = "form3">
+		<div id="formsec3">
+		<h1><span>EVEN SEMESTER</h1>
+			<div id="formSec1">
+				<form id="item13">
+				<form class = "form-main">
+					<div class = "form-block">
+					<table style="overflow-x: auto;">
+						 <tr>
+							<th>S.no</th>
+							<th>Course Code</th>
+							<th>Couse Title</th>
+							<th>Contact Hours/week</th>
+							<th>Total no. of scheduled classes in semester</th>
+							<th>Total no. of engaged classes in semester</th>
+							<th>API score</th>
+							<th>HOD remarks</th>
+						 </tr>
+						 <tr>
+							<td>
+								<input type="text" value="1" placeholder=""/>
+							</td>
+							<td>
+								<input type="text" value="" placeholder=""/>
+							</td>
+							<td>
+								<input type="text" value ="" placeholder=""/>
+								
+							</td>
+							<td>
+								<input type="text" value="" placeholder=""/>
+							 </td>
+							<td>
+								<input type="text" value="" id="tf_even1"/>
+							</td>
+							<td>
+								<input type="text" value="" id="tf_even2"/>
+							</td>
+							<td>
+								<input type="text" value="" id="tfapi2"/>
+							</td>
+							<td>
+								<input type="text" value=""/>
+							</td>
+							<br/>
+						 </tr>
+					</table>
+				</form>
+					</div>
+					<button class=" button float-right mt-2" style="vertical-align:middle" onclick="add_morefield3()"><span>Add More</span></button>
+					<button class=" button float-right mt-2" style="vertical-align:middle" id="btncalceven" onclick="apiscoretable_3()"><span>Calculate API SCORE</span></button>
+				
+				</form>
+			</div>
+			</div>
+		</section>
+
+						
+	<button class=" button btn btn-primary" id="download" style="width: 25%; margin-left: 37%; color: black;"><b>Download</b></button>
+						
+    
+        <ul style="list-style-type: none;">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+       
+    
+
+
+
+	<script src="addmore.js"></script>
+	<script src = "submit_button.js"></script>	
+	<script>
+		
+		function apiscore(){
+	var cbweek1 = document.getElementById("c1");
+	var cbweek2 = document.getElementById("c2");
+	var cbweek3 = document.getElementById("c3");
+	var cbweek4 = document.getElementById("c4");
+	var cbweek5 = document.getElementById("c5");
+	var apitext = document.getElementById("apitf");
+		var apisum = 0;
+		var sum1 = 0;
+		var sum2 = 0;
+		var sum3 = 0;
+		var sumf = 0;
+		var w1val = cbweek1.value;
+		var w2val = cbweek2.value;
+		var w3val = cbweek3.value;
+		
+		
+
+		if(cbweek1.checked==true){
+			console.log(w1val);
+			sum1 = parseInt(w1val);
+			sumf +=  sum1;
+			
+		}
+		else if(cbweek2.checked==true){
+			console.log(w2val);
+			sum2 = parseInt(w2val);
+			sumf += sum2;
+			
+		}
+		else if(cbweek3.checked==true){
+			console.log(w3val);
+			sum3 = parseInt(w3val);
+			sumf += sum3;
+			
+		}
+
+		if(cbweek5.checked==true){
+			cbweek1.value = 5+1;
+			cbweek2.value = 10+3;
+			cbweek3.value = 20+5;
+
+		}
+
+		console.log(sumf);
+		apisum = sumf;
+		apitext.value = apisum;	
+    }
+	function apiscoretable_2(){
+		var textf1 = document.getElementById("tf_odd1");
+		var textf2 = document.getElementById("tf_odd2");
+		var apitf = document.getElementById("tfapi1");
+		var btn = document.getElementById("btncalc");
+		
+		
+		var n1 = parseInt(textf1.value);
+		var n2 = parseInt(textf2.value);
+		var res = n2/n1*100;
+		console.log(n1);
+		console.log(n2);
+		var final = 0;
+		if(res>=95){
+			final = 25;
+			
+		}
+		else if(res>80){
+			/*80->95 = 15 -> 25*/
+			if(res>90){
+				final = 25;
+			}
+			else if(res>85){
+				final = 20;
+			}
+			else if(res>80){
+				final = 15;
+			}
+		}
+		else if(res=80){
+			final = 15;
+		}
+		else{
+			final = 0;
+		}
+		
+		apitf.value = final;
+		btn.addEventListener('click',apiscoretable_2);
+
+	}
+	function apiscoretable_3(){
+		var textf1 = document.getElementById("tf_even1");
+		var textf2 = document.getElementById("tf_even2");
+		var apitf = document.getElementById("tfapi2");
+		var btn = document.getElementById("btncalceven");
+		
+		
+		var n1 = parseInt(textf1.value);
+		var n2 = parseInt(textf2.value);
+		var res = n2/n1*100;
+		console.log(n1);
+		console.log(n2);
+		var final = 0;
+		if(res>=95){
+			final = 25;
+			
+		}
+		else if(res>80){
+			/*80->95 = 15 -> 25*/
+			if(res>90){
+				final = 25;
+			}
+			else if(res>85){
+				final = 20;
+			}
+			else if(res>80){
+				final = 15;
+			}
+		}
+		else if(res=80){
+			final = 15;
+		}
+		
+		apitf.value = final;
+		btn.addEventListener('click',apiscoretable_3);
+
+	}
+	function apiscoretable4(){
+		var tf = document.getElementById("cc");
+		var apitf = document.getElementById("apitf3");
+		var btn = document.getElementById("btncalc2")
+		var res = tf.value;
+		if(res.length < 1){
+			apitf.value = 0;
+		}
+		else{
+			apitf.value = 10;
+		}
+		btn.addEventListener('click',apiscoretable4);
+	}
+	</script>										
+	</body>
+</html>
